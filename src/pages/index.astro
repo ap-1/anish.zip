@@ -1,16 +1,48 @@
 ---
-
+import "../globals.css";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>Anish</title>
 	</head>
-	<body>
-		<h1>Anish</h1>
+
+	<body
+		class="dark font-sans bg-background text-text mx-auto max-w-3xl px-8 py-32"
+	>
+		<div
+			class="overflow-hidden h-[calc(100vh-16rem)] border border-border rounded-xl"
+		>
+			<header class="bg-border h-7 relative">
+				<section
+					class="absolute top-1/2 -translate-y-1/2 left-2 flex flex-row gap-2"
+				>
+					<div class="rounded-full h-3 w-3 bg-red-400"></div>
+					<div class="rounded-full h-3 w-3 bg-yellow-400"></div>
+					<div class="rounded-full h-3 w-3 bg-green-400"></div>
+				</section>
+
+				<section
+					class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-row gap-1"
+				>
+					<img
+						src="/favicon.svg"
+						alt="Anish"
+						class="h-5 w-5 my-auto"
+					/>
+					<h1 class="text-sm my-auto">anish.zip</h1>
+				</section>
+			</header>
+
+			<main>
+				<p>projects: drwxrwxr-x</p>
+				<p>writing: drwxr-xr-x</p>
+			</main>
+		</div>
 	</body>
 </html>
